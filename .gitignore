@@ -1,94 +1,28 @@
-# ============================================
-#  Node.js / NestJS
-# ============================================
-
 # Dependencias
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 
-# Archivos compilados de TypeScript
+# Compilado
 dist/
-build/
-*.tsbuildinfo
 
-# ============================================
-#  Variables de entorno (¡CRÍTICO!)
-# ============================================
+# Variables de entorno
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.secrets
+.env.*.local
 
-# ============================================
-#  Testing y Coverage
-# ============================================
+# Testing
 coverage/
-.nyc_output/
-*.lcov
-tests/.pytest_cache/
-.pytest_cache/
 
-# ============================================
-#  Linting y Formatting
-# ============================================
-.eslintcache
-.ruff_cache/
+# Logs
+*.log
+npm-debug.log*
 
-# ============================================
-#  IDEs y Editores
-# ============================================
-.idea/
+# IDEs
 .vscode/
-*.swp
-*.swo
-*~
-*.sublime-project
-*.sublime-workspace
+.idea/
 
-# ============================================
-#  Sistema Operativo
-# ============================================
+# Sistema Operativo
 .DS_Store
 Thumbs.db
 
-# ============================================
-#  Logs
-# ============================================
-logs/
-*.log
-npm-debug.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# ============================================
-#  SonarQube
-# ============================================
-.scannerwork/
-
-# ============================================
-#  Build outputs
-# ============================================
-out/
-.output/
-.vercel/
-.netlify/
-
-# ============================================
-#  Caché
-# ============================================
-.cache/
-.parcel-cache/
-.nest/
-
-# ============================================
-#  Temporales
-# ============================================
-*.tmp
-*.temp
-.temp/
-.tmp/
+# Caché
+.eslintcache
