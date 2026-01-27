@@ -1,28 +1,66 @@
-# Dependencias
+# Node.js / NestJS
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Compilado
+# Archivos compilados
 dist/
+build/
+*.tsbuildinfo
 
 # Variables de entorno
 .env
 .env.local
-.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.secrets
 
-# Testing
+# Testing y Coverage
 coverage/
+.nyc_output/
+*.lcov
+.pytest_cache/
 
-# Logs
-*.log
-npm-debug.log*
+# Linting
+.eslintcache
+.ruff_cache/
 
 # IDEs
-.vscode/
 .idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
 
 # Sistema Operativo
 .DS_Store
 Thumbs.db
 
+# Logs
+logs/
+*.log
+
+# SonarQube
+.scannerwork/
+
+# Build outputs
+out/
+.output/
+.vercel/
+.netlify/
+
 # Caché
-.eslintcache
+.cache/
+.parcel-cache/
+.nest/
+
+# Temporales
+*.tmp
+*.temp
+.temp/
+.tmp/
