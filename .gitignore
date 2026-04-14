@@ -64,3 +64,4 @@ out/
 *.temp
 .temp/
 .tmp/
+dist/

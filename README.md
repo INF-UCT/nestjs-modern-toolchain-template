@@ -9,19 +9,19 @@ Template en NestJS moderno.
 
 ## Requisitos
 
-- Node.js 20 o superior
-- npm
+- Node.js LTS [Instalación](https://nodejs.org/en/download)
+- pnpm [Instalación](https://pnpm.io/es/installation)
 
 ## Instalación
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Ejecutar en desarrollo
 
 ```bash
-npm run start:dev
+pnpm run start:dev
 ```
 
 La API estará disponible en:
@@ -39,7 +39,7 @@ Retorna un mensaje de bienvenida.
 
 ```json
 {
-  "Hello": "World"
+    "Hello": "World"
 }
 ```
 
@@ -58,8 +58,8 @@ Retorna información de un item por ID.
 
 ```json
 {
-  "item_id": 5,
-  "q": "test"
+    "item_id": 5,
+    "q": "test"
 }
 ```
 
@@ -67,35 +67,35 @@ Retorna información de un item por ID.
 
 ```bash
 # Tests unitarios
-npm test
+pnpm test
 
 # Tests con coverage
-npm run test:cov
+pnpm run test:cov
 
 # Tests en modo watch
-npm run test:watch
+pnpm run test:watch
 
 # Tests e2e
-npm run test:e2e
+pnpm run test:e2e
 ```
 
 ## Linting y Formato
 
 ```bash
 # Ejecutar linter
-npm run lint
+pnpm run lint
 
 # Formatear código
-npm run format
+pnpm run format
 
 # Verificar formato
-npm run format:check
+pnpm run format:check
 ```
 
 ## Build
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## Estructura del Proyecto
@@ -122,7 +122,7 @@ npm run build
 ├── eslint.config.mjs           # Configuración de ESLint
 ├── nest-cli.json               # Configuración de NestJS CLI
 ├── package.json                # Dependencias y scripts
-├── package-lock.json           # Lock de dependencias
+├── pnpm-lock.yaml              # Lock de dependencias
 ├── README.md                   # Este archivo
 └── tsconfig.json               # Configuración de TypeScript
 ```
@@ -139,10 +139,22 @@ npm run build
 
 ## Scripts Disponibles
 
-| Comando             | Descripción                        |
-| ------------------- | ---------------------------------- |
-| `npm run start:dev` | Inicia servidor en modo desarrollo |
-| `npm run build`     | Compila el proyecto                |
-| `npm test`          | Ejecuta tests                      |
-| `npm run lint`      | Ejecuta linter                     |
-| `npm run format`    | Formatea código                    |
+| Comando              | Descripción                        |
+| -------------------- | ---------------------------------- |
+| `pnpm run start:dev` | Inicia servidor en modo desarrollo |
+| `pnpm run build`     | Compila el proyecto                |
+| `pnpm test`          | Ejecuta tests                      |
+| `pnpm run lint`      | Ejecuta linter                     |
+| `pnpm run format`    | Formatea código                    |
+
+## Makefile
+
+También puedes usar comandos abreviados con `make`:
+
+```bash
+make install
+make dev
+make lint
+make test
+make build
+```

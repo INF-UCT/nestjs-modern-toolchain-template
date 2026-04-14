@@ -1,7 +1,7 @@
-import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import prettierConfig from 'eslint-config-prettier';
-import prettierPlugin from 'eslint-plugin-prettier';
+import eslint from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import prettierConfig from 'eslint-config-prettier'
+import prettierPlugin from 'eslint-plugin-prettier'
 
 export default tseslint.config(
     eslint.configs.recommended,
@@ -30,4 +30,4 @@ export default tseslint.config(
     {
         ignores: ['dist/', 'node_modules/', 'coverage/', '*.config.mjs'],
     },
-);
+)
