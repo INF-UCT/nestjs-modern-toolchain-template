@@ -1,5 +1,5 @@
-import { Controller, Get, Param, Query } from '@nestjs/common'
-import { AppService } from './app.service'
+import { AppService } from "./app.service"
+import { Controller, Get, Param, Query } from "@nestjs/common"
 
 @Controller()
 export class AppController {
@@ -10,8 +10,8 @@ export class AppController {
         return this.appService.getRoot()
     }
 
-    @Get('items/:id')
-    getItem(@Param('id') id: string, @Query('q') q?: string) {
+    @Get("items/:id")
+    getItem(@Param("id") id: string, @Query("q") q?: string) {
         return this.appService.getItem(parseInt(id), q)
     }
 }

@@ -1,9 +1,9 @@
-import { Injectable } from '@nestjs/common'
+import { Injectable } from "@nestjs/common"
 
 @Injectable()
 export class AppService {
     getRoot() {
-        return { Hello: 'World' }
+        return { Hello: "World" }
     }
 
     getItem(id: number, q?: string) {
